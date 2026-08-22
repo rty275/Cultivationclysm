@@ -1,8 +1,8 @@
 [
   {
     "type": "MOD_INFO",
-    "id": "cultivationcores_overcomplicated",
-    "name": "Cultivation Core Beta Branch",
+    "id": "cultivationclysm",
+    "name": "Cultivationclysm",
     "authors": [ "rty275" ],
     "description": "Allows you to keep pushing mana into a core that slowly makes you better at various things.",
     "category": "content",
