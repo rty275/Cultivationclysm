@@ -30,20 +30,20 @@
       { "value": "METABOLISM", "multiply": { "math": [ "cultivation_metabolism_factor()" ] } },
       { "value": "BIONIC_MANA_PENALTY", "multiply": { "math": [ "cultivation_bionic_penalty_factor()" ] } },
       { "value": "BIONIC_POWER", "multiply": { "math": [ "cultivation_bionic_power_factor()" ] } },
-      { "value": "ARMOR_ALL", "multiply": { "math": [ "cultivation_armor_factor()" ] } },
+      { "value": "ARMOR_ALL", "add": { "math": [ "cultivation_armor_factor()" ] } },
       { "value": "CRAFTING_SPEED_MULTIPLIER", "multiply": { "math": [ "cultivation_craft_speed_factor()" ] } },
-      { "value": "BONUS_DODGE", "multiply": { "math": [ "cultivation_dodge_factor()" ] } },
-      { "value": "FREE_DODGES", "multiply": { "math": [ "cultivation_dodge_factor()" ] } },
+      { "value": "BONUS_DODGE", "add": { "math": [ "cultivation_dodge_factor()" ] } },
+      { "value": "FREE_DODGES", "add": { "math": [ "cultivation_dodge_factor()" ] } },
       { "value": "PAIN", "multiply": { "math": [ "cultivation_pain_factor()" ] } },
-      { "value": "SPEED", "multiply": { "math": [ "cultivation_speed_factor()" ] } },
+      { "value": "SPEED", "add": { "math": [ "cultivation_speed_factor()" ] } },
       { "value": "NIGHT_VIS", "multiply": { "math": [ "cultivation_vision_factor()" ] } },
       { "value": "OVERMAP_SIGHT", "multiply": { "math": [ "cultivation_vision_factor()" ] } },
-      { "value": "CLIMATE_CONTROL_HEAT", "multiply": { "math": [ "cultivation_climate_control_factor()" ] } },
-      { "value": "CLIMATE_CONTROL_CHILL", "multiply": { "math": [ "cultivation_climate_control_factor()" ] } },
-      { "value": "STRENGTH", "multiply": { "math": [ "cultivation_str_factor()" ] } },
-      { "value": "DEXTERITY", "multiply": { "math": [ "cultivation_dex_factor()" ] } },
-      { "value": "INTELLIGENCE", "multiply": { "math": [ "cultivation_int_factor()" ] } },
-      { "value": "PERCEPTION", "multiply": { "math": [ "cultivation_per_factor()" ] } }
+      { "value": "CLIMATE_CONTROL_HEAT", "add": { "math": [ "cultivation_climate_control_factor()" ] } },
+      { "value": "CLIMATE_CONTROL_CHILL", "add": { "math": [ "cultivation_climate_control_factor()" ] } },
+      { "value": "STRENGTH", "add": { "math": [ "cultivation_str_factor()" ] } },
+      { "value": "DEXTERITY", "add": { "math": [ "cultivation_dex_factor()" ] } },
+      { "value": "INTELLIGENCE", "add": { "math": [ "cultivation_int_factor()" ] } },
+      { "value": "PERCEPTION", "add": { "math": [ "cultivation_per_factor()" ] } }
     ]
   }
 ]
