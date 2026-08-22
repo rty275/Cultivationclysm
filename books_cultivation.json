@@ -1,0 +1,163 @@
+[
+  {
+    "abstract": "cultivation_scroll_abstract",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "name": { "str": "abstract cultivation technique scroll", "//~": "NO_I18N" },
+    "weight": "2000 g",
+    "description": "Abstract cultivation scroll.  If you see this it's a bug.",
+    "volume": "500 ml",
+    "price": "10000 USD",
+    "price_postapoc": "100 USD",
+    "material": [ "paper", "gold" ],
+    "symbol": "?",
+    "color": "gold",
+    "min_level": 3,
+    "max_level": 4,
+    "intelligence": 7,
+    "time": "60 m",
+    "read_skill": "swimming",
+    "read_fun": 0
+  },
+  {
+    "id": "cult_max_mana_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Deepen the Ocean" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the deepening of the practitioner's magical reserves."
+  },
+  {
+    "id": "cult_max_hp_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Raise the Mountain" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the building of the practitioner's physical health."
+  },
+  {
+    "id": "cult_max_stamina_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Nurture the Oak" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the deepening of the practitioner's reserves of stamina."
+  },
+  {
+    "id": "cult_mana_regen_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: River Runs Faster" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the speeding of the practitioner's magical regeneration."
+  },
+  {
+    "id": "cult_hp_regen_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: The Lotus Blooms Daily" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the speeding of the practitioner's physical regeneration."
+  },
+  {
+    "id": "cult_stamina_regen_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Fuel the Roaring Bonfire" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the speeding of the practitioner's stamina regeneration."
+  },
+  {
+    "id": "cult_learning_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Enlightenment of Heaven" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the speeding of the practitioner's ability to learn."
+  },
+  {
+    "id": "cult_metabolism_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Eternal Coal Furnace" },
+    "description": "An ancient cultivation sutra that teaches a technique that allows the reduction of the practitioner's physical needs."
+  },
+  {
+    "id": "cult_bionics_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Roaring Bonfire" },
+    "description": "An ancient cultivation sutra that teaches a technique never before known on this planet.  How did this get here?"
+  },
+  {
+    "id": "cult_armor_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Steel Boulder" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's resilience to harm."
+  },
+  {
+    "id": "cult_craft_speed_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: From Thought to Function" },
+    "description": "An ancient cultivation sutra that teaches a technique that speeds the practitioner's ability to create things with their hands."
+  },
+  {
+    "id": "cult_dodge_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Step Between Raindrops" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's ability to dodge."
+  },
+  {
+    "id": "cult_pain_resistance_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Transcend Suffering" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's resilience to pain."
+  },
+  {
+    "id": "cult_speed_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Become Lightning" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's speed."
+  },
+  {
+    "id": "cult_vision_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Peer Beyond the Horizon" },
+    "description": "An ancient cultivation sutra that teaches a technique that enhances the practitioner's vision."
+  },
+  {
+    "id": "cult_climate_control_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Neither Sear Nor Snow" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's resilience to temperatures."
+  },
+  {
+    "id": "cult_str_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Strength of the Oni" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's strength."
+  },
+  {
+    "id": "cult_dex_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Agility of the Kitsune" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's dexterity."
+  },
+  {
+    "id": "cult_int_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Cunning of the Kenku" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's intelligence."
+  },
+  {
+    "id": "cult_per_scroll",
+    "type": "ITEM",
+    "copy-from": "cultivation_scroll_abstract",
+    "name": { "str": "Cultivation Technique: Eyes of the Heavens" },
+    "description": "An ancient cultivation sutra that teaches a technique that bolsters the practitioner's perception."
+  }
+]

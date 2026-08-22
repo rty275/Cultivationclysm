@@ -1,0 +1,238 @@
+[
+  {
+    "type": "proficiency_category",
+    "id": "prof_cultivation",
+    "name": "Cultivation",
+    "description": "The secret techniques needed to know how to cultivate various traits into yourself."
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_cultivation_basics",
+    "category": "prof_cultivation",
+    "name": { "str": "Basics of Cultivation" },
+    "description": "You know the theory of cultivation, though you still need to learn a technique with which you can cultivate your potential.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "8 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_max_mana_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Maximum Mana" },
+    "description": "You know how to cultivate to increase your maximum mana.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_max_hp_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Maximum Health" },
+    "description": "You know how to cultivate to increase your maximum health.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_max_stamina_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Maximum Stamina" },
+    "description": "You know how to cultivate to increase your maximum Stamina.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_mana_regen_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Mana Regeneration" },
+    "description": "You know how to cultivate to increase your mana regeneration.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_hp_regen_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Health Regeneration" },
+    "description": "You know how to cultivate to increase your health regeneration.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_stamina_regen_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Stamina Regeneration" },
+    "description": "You know how to cultivate to increase your stamina regeneration.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_learning_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Learning" },
+    "description": "You know how to cultivate to increase your learning potential.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_metabolism_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Metabolism" },
+    "description": "You know how to cultivate to reduce your need for food and drink.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_bionics_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Bionic Potential" },
+    "description": "You know how to cultivate to increase your maximum bionic power while also making it impact your mana less.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_armor_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Hardiness" },
+    "description": "You know how to cultivate to reduce the harm you are dealt.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_craft_speed_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Craftiness" },
+    "description": "You know how to cultivate to increase your crafting speed.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_dodge_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Evasiveness" },
+    "description": "You know how to cultivate to increase your ability to dodge, sometimes even without expending stamina.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_pain_resistance_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Pain Resistance" },
+    "description": "You know how to cultivate to reduce the amount of pain you receive.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_speed_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Speed" },
+    "description": "You know how to cultivate to increase your speed.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_vision_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Vision" },
+    "description": "You know how to cultivate to increase your night vision and your ability to see what lies over the horizon.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_climate_control_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Temperature Tolerance" },
+    "description": "You know how to cultivate to increase your ability to tolerate extreme temperatures.  Not effective against actual flame.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_str_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Strength" },
+    "description": "You know how to cultivate to increase your strength.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_dex_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Dexterity" },
+    "description": "You know how to cultivate to increase your dexterity.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_int_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Intelligence" },
+    "description": "You know how to cultivate to increase your intelligence.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_per_cultivation",
+    "category": "prof_cultivation",
+    "name": { "str": "Cultivation of Perception" },
+    "description": "You know how to cultivate to increase your perception.",
+    "can_learn": true,
+    "teachable": true,
+    "time_to_learn": "24 h",
+    "required_proficiencies": [ "prof_cultivation_basics" ]
+  }
+]

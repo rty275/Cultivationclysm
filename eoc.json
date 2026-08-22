@@ -1,0 +1,484 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "cultivation_open_game_with_menu",
+    "//": "Open the settings menu on game start",
+    "recurrence": 1,
+    "condition": { "not": { "u_has_trait": "cultivationcore" } },
+    "deactivate_condition": { "u_has_trait": "cultivationcore" },
+    "effect": [ { "open_dialogue": { "topic": "talk_cultivation_opening" } } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "cultivation_core_give",
+    "//": "Begin game with a core, doncha know",
+    "recurrence": 1,
+    "condition": { "not": { "u_has_trait": "cultivationcore" } },
+    "deactivate_condition": { "u_has_trait": "cultivationcore" },
+    "effect": [ { "u_add_trait": "cultivationcore" }, { "u_message": "Your energies condense into a core." } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_selector",
+    "effect": [
+      { "math": [ "u_cultivation_consumed_mana = 0" ] },
+      { "u_assign_activity": "cultivation_activity", "duration": "72 hours" },
+      {
+        "run_eoc_selector": [
+          "eoc_cultivation_max_mana_start",
+          "eoc_cultivation_max_hp_start",
+          "eoc_cultivation_max_stamina_start",
+          "eoc_cultivation_mana_regen_start",
+          "eoc_cultivation_hp_regen_start",
+          "eoc_cultivation_stamina_regen_start",
+          "eoc_cultivation_learning_start",
+          "eoc_cultivation_metabolism_start",
+          "eoc_cultivation_bionics_start",
+          "eoc_cultivation_armor_start",
+          "eoc_cultivation_craft_speed_start",
+          "eoc_cultivation_evasiveness_start",
+          "eoc_cultivation_pain_resistance_start",
+          "eoc_cultivation_speed_start",
+          "eoc_cultivation_vision_start",
+          "eoc_cultivation_climate_control_start",
+          "eoc_cultivation_str_start",
+          "eoc_cultivation_dex_start",
+          "eoc_cultivation_int_start",
+          "eoc_cultivation_per_start",
+          "eoc_cultivation_abort"
+        ],
+        "names": [
+          "Cultivate Maximum Mana",
+          "Cultivate Maximum Health",
+          "Cultivate Maximum Stamina",
+          "Cultivate Mana Regeneration",
+          "Cultivate Health Regeneration",
+          "Cultivate Stamina Regeneration",
+          "Cultivate Learning",
+          "Cultivate Metabolism",
+          "Cultivate Bionic Potential",
+          "Cultivate Hardiness",
+          "Cultivate Craftsmanship",
+          "Cultivate Evasiveness",
+          "Cultivate Pain Resistance",
+          "Cultivate Speed",
+          "Cultivate Vision",
+          "Cultivate Temperature Tolerance",
+          "Cultivate Strength",
+          "Cultivate Dexterity",
+          "Cultivate Intelligence",
+          "Cultivate Perception",
+          "Don't Cultivate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cultivation_activity",
+    "type": "activity_type",
+    "activity_level": "BRISK_EXERCISE",
+    "verb": "meditating",
+    "rooted": true,
+    "interruptable": true,
+    "interruptable_with_kb": true,
+    "based_on": "time"
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_cultivating",
+    "//": "Hidden effect, used as a tracker",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "max_intensity": 20,
+    "max_effective_intensity": 1,
+    "enchantments": [ "cultivation_null_mana_regen_enchantment" ],
+    "rating": "good"
+  },
+  {
+    "type": "enchantment",
+    "id": "cultivation_null_mana_regen_enchantment",
+    "name": { "str": "Cultivation Mana Sink" },
+    "description": "You shouldn't ever see this",
+    "condition": "ALWAYS",
+    "values": [ { "value": "REGEN_MANA", "multiply": -1 } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "cultivation_variable_increase",
+    "eoc_type": "EVENT",
+    "required_event": "character_finished_activity",
+    "condition": { "u_has_effect": "effect_cultivating" },
+    "effect": [
+      {
+        "switch": { "math": [ "u_effect_intensity('effect_cultivating')" ] },
+        "cases": [
+          { "case": 1, "effect": { "math": [ "u_cultivation_max_mana_experience += u_cultivation_consumed_mana" ] } },
+          { "case": 2, "effect": { "math": [ "u_cultivation_max_hp_experience += u_cultivation_consumed_mana" ] } },
+          {
+            "case": 3,
+            "effect": { "math": [ "u_cultivation_max_stamina_experience += u_cultivation_consumed_mana" ] }
+          },
+          {
+            "case": 4,
+            "effect": { "math": [ "u_cultivation_mana_regen_experience += u_cultivation_consumed_mana" ] }
+          },
+          { "case": 5, "effect": { "math": [ "u_cultivation_hp_regen_experience += u_cultivation_consumed_mana" ] } },
+          {
+            "case": 6,
+            "effect": { "math": [ "u_cultivation_stamina_regen_experience += u_cultivation_consumed_mana" ] }
+          },
+          { "case": 7, "effect": { "math": [ "u_cultivation_learning_experience += u_cultivation_consumed_mana" ] } },
+          {
+            "case": 8,
+            "effect": { "math": [ "u_cultivation_metabolism_experience += u_cultivation_consumed_mana" ] }
+          },
+          { "case": 9, "effect": { "math": [ "u_cultivation_bionics_experience += u_cultivation_consumed_mana" ] } },
+          { "case": 10, "effect": { "math": [ "u_cultivation_armor_experience += u_cultivation_consumed_mana" ] } },
+          {
+            "case": 11,
+            "effect": { "math": [ "u_cultivation_craft_speed_experience += u_cultivation_consumed_mana" ] }
+          },
+          { "case": 12, "effect": { "math": [ "u_cultivation_dodge_experience += u_cultivation_consumed_mana" ] } },
+          {
+            "case": 13,
+            "effect": { "math": [ "u_cultivation_pain_resistance_experience += u_cultivation_consumed_mana" ] }
+          },
+          { "case": 14, "effect": { "math": [ "u_cultivation_speed_experience += u_cultivation_consumed_mana" ] } },
+          { "case": 15, "effect": { "math": [ "u_cultivation_vision_experience += u_cultivation_consumed_mana" ] } },
+          {
+            "case": 16,
+            "effect": { "math": [ "u_cultivation_climate_control_experience += u_cultivation_consumed_mana" ] }
+          },
+          { "case": 17, "effect": { "math": [ "u_cultivation_str_experience += u_cultivation_consumed_mana" ] } },
+          { "case": 18, "effect": { "math": [ "u_cultivation_dex_experience += u_cultivation_consumed_mana" ] } },
+          { "case": 19, "effect": { "math": [ "u_cultivation_int_experience += u_cultivation_consumed_mana" ] } },
+          { "case": 20, "effect": { "math": [ "u_cultivation_per_experience += u_cultivation_consumed_mana" ] } }
+        ]
+      },
+      { "math": [ "u_cultivation_consumed_mana = 0" ] },
+      { "u_lose_effect": "effect_cultivating" }
+    ]
+  },
+  {
+    "id": "eoc_cultivation_abort",
+    "type": "effect_on_condition",
+    "eoc_type": "ACTIVATION",
+    "effect": "u_cancel_activity"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_mana_drain",
+    "eoc_type": "ACTIVATION",
+    "condition": { "u_has_effect": "effect_cultivating" },
+    "deactivate_condition": { "not": { "u_has_effect": "effect_cultivating" } },
+    "effect": [
+      { "math": [ "u_val('mana') -= 10" ] },
+      { "math": [ "u_cultivation_consumed_mana += 10 " ] },
+      {
+        "if": { "math": [ "u_val('mana') >= 10" ] },
+        "then": { "run_eocs": "eoc_cultivation_mana_drain", "time_in_future": "5 minutes" },
+        "else": "u_cancel_activity"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_max_mana_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_max_mana_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 1, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_max_hp_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_max_hp_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 2, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_max_stamina_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_max_stamina_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 3, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_mana_regen_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_mana_regen_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 4, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_hp_regen_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_hp_regen_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 5, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_stamina_regen_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_stamina_regen_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 6, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_learning_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_learning_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 7, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_metabolism_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_metabolism_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 8, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_bionics_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_bionics_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 9, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_armor_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_armor_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 10, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_craft_speed_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_craft_speed_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 11, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_evasiveness_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_dodge_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 12, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_pain_resistance_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_pain_resistance_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 13, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_speed_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_speed_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 14, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_vision_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_vision_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 15, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_climate_control_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_climate_control_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 16, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_str_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_str_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 17, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_dex_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_dex_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 18, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_int_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_int_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 19, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "eoc_cultivation_per_start",
+    "condition": {
+      "or": [
+        { "u_has_proficiency": "prof_per_cultivation" },
+        { "compare_string": [ "yes", { "u_val": "u_cultivation_ignore_proficiencies" } ] }
+      ]
+    },
+    "effect": [
+      { "u_add_effect": "effect_cultivating", "intensity": 20, "duration": "PERMANENT" },
+      { "run_eocs": "eoc_cultivation_mana_drain" }
+    ],
+    "false_effect": [ { "u_message": "You don't know how to cultivate that!" } ]
+  }
+]

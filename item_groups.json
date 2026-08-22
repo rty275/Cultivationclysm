@@ -1,0 +1,90 @@
+[
+  {
+    "id": "book_martial_rare",
+    "type": "item_group",
+    "copy-from": "book_martial_rare",
+    "extend": {
+      "items": [
+        [ "cult_max_mana_scroll", 50 ],
+        [ "cult_max_hp_scroll", 50 ],
+        [ "cult_max_stamina_scroll", 50 ],
+        [ "cult_mana_regen_scroll", 50 ],
+        [ "cult_hp_regen_scroll", 50 ],
+        [ "cult_stamina_regen_scroll", 50 ],
+        [ "cult_learning_scroll", 50 ],
+        [ "cult_metabolism_scroll", 50 ],
+        [ "cult_bionics_scroll", 50 ],
+        [ "cult_armor_scroll", 50 ],
+        [ "cult_craft_speed_scroll", 50 ],
+        [ "cult_dodge_scroll", 50 ],
+        [ "cult_pain_resistance_scroll", 50 ],
+        [ "cult_speed_scroll", 50 ],
+        [ "cult_vision_scroll", 50 ],
+        [ "cult_climate_control_scroll", 50 ],
+        [ "cult_str_scroll", 50 ],
+        [ "cult_dex_scroll", 50 ],
+        [ "cult_int_scroll", 50 ],
+        [ "cult_per_scroll", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "museum_misc",
+    "type": "item_group",
+    "copy-from": "museum_misc",
+    "extend": {
+      "items": [
+        [ "cult_max_mana_scroll", 10 ],
+        [ "cult_max_hp_scroll", 10 ],
+        [ "cult_max_stamina_scroll", 10 ],
+        [ "cult_mana_regen_scroll", 10 ],
+        [ "cult_hp_regen_scroll", 10 ],
+        [ "cult_stamina_regen_scroll", 10 ],
+        [ "cult_learning_scroll", 10 ],
+        [ "cult_metabolism_scroll", 10 ],
+        [ "cult_bionics_scroll", 10 ],
+        [ "cult_armor_scroll", 10 ],
+        [ "cult_craft_speed_scroll", 10 ],
+        [ "cult_dodge_scroll", 10 ],
+        [ "cult_pain_resistance_scroll", 10 ],
+        [ "cult_speed_scroll", 10 ],
+        [ "cult_vision_scroll", 10 ],
+        [ "cult_climate_control_scroll", 10 ],
+        [ "cult_str_scroll", 10 ],
+        [ "cult_dex_scroll", 10 ],
+        [ "cult_int_scroll", 10 ],
+        [ "cult_per_scroll", 10 ]
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "mansion_books",
+    "//": "Sublime Way seem to be like books that rich people would be more likely to collect than the others, although still very rare",
+    "copy-from": "mansion_books",
+    "extend": {
+      "items": [
+        [ "cult_max_mana_scroll", 3 ],
+        [ "cult_max_hp_scroll", 3 ],
+        [ "cult_max_stamina_scroll", 3 ],
+        [ "cult_mana_regen_scroll", 3 ],
+        [ "cult_hp_regen_scroll", 3 ],
+        [ "cult_stamina_regen_scroll", 3 ],
+        [ "cult_learning_scroll", 3 ],
+        [ "cult_metabolism_scroll", 3 ],
+        [ "cult_bionics_scroll", 3 ],
+        [ "cult_armor_scroll", 3 ],
+        [ "cult_craft_speed_scroll", 3 ],
+        [ "cult_dodge_scroll", 3 ],
+        [ "cult_pain_resistance_scroll", 3 ],
+        [ "cult_speed_scroll", 3 ],
+        [ "cult_vision_scroll", 3 ],
+        [ "cult_climate_control_scroll", 3 ],
+        [ "cult_str_scroll", 3 ],
+        [ "cult_dex_scroll", 3 ],
+        [ "cult_int_scroll", 3 ],
+        [ "cult_per_scroll", 3 ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "type": "jmath_function",
+    "id": "cultivation_max_mana_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_max_mana_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_max_hp_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_max_hp_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_max_stamina_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_max_stamina_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_mana_regen_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_mana_regen_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_hp_regen_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_hp_regen_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_stamina_regen_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_stamina_regen_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_learning_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_learning_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_metabolism_factor",
+    "num_args": 0,
+    "return": "((u_cultivation_metabolism_experience / u_cultivation_difficulty) ^ 1.2) * -1"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_bionic_penalty_factor",
+    "num_args": 0,
+    "return": "((u_cultivation_bionics_experience / u_cultivation_difficulty) ^ 1.2) * -1"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_bionic_power_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_bionics_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_armor_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_armor_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_craft_speed_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_craft_speed_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_dodge_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_dodge_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_pain_factor",
+    "num_args": 0,
+    "return": "((u_cultivation_pain_resistance_experience / u_cultivation_difficulty) ^ 1.2) * -1"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_speed_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_speed_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_vision_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_vision_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_climate_control_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_climate_control_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_str_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_str_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_dex_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_dex_experience / u_cultivation_difficulty) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_int_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_int_experience * (1 / u_cultivation_difficulty)) ^ 1.2"
+  },
+  {
+    "type": "jmath_function",
+    "id": "cultivation_per_factor",
+    "num_args": 0,
+    "return": "(u_cultivation_per_experience / u_cultivation_difficulty) ^ 1.2"
+  }
+]

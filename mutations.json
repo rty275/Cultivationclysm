@@ -1,0 +1,49 @@
+[
+  {
+    "type": "mutation",
+    "id": "cultivationcore",
+    "name": "Cultivation Core",
+    "points": 1,
+    "description": "A cultivation core contains a dense weight of magical power, made more potent the more mana you invest into it.",
+    "valid": false,
+    "purifiable": false,
+    "player_display": true,
+    "active": true,
+    "enchantments": [ "CULTIVATION_BUFF" ],
+    "activated_eocs": [ "eoc_cultivation_selector" ]
+  },
+  {
+    "type": "enchantment",
+    "id": "CULTIVATION_BUFF",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MAX_MANA", "multiply": { "math": [ "cultivation_max_mana_factor()" ] } },
+      { "value": "MAX_HP", "multiply": { "math": [ "cultivation_max_hp_factor()" ] } },
+      { "value": "MAX_STAMINA", "multiply": { "math": [ "cultivation_max_stamina_factor()" ] } },
+      { "value": "REGEN_MANA", "multiply": { "math": [ "cultivation_mana_regen_factor()" ] } },
+      { "value": "REGEN_HP", "multiply": { "math": [ "cultivation_hp_regen_factor()" ] } },
+      { "value": "REGEN_STAMINA", "multiply": { "math": [ "cultivation_stamina_regen_factor()" ] } },
+      { "value": "LEARNING_FOCUS", "multiply": { "math": [ "cultivation_learning_factor()" ] } },
+      { "value": "READING_EXP", "multiply": { "math": [ "cultivation_learning_factor()" ] } },
+      { "value": "HUNGER", "multiply": { "math": [ "cultivation_metabolism_factor()" ] } },
+      { "value": "THIRST", "multiply": { "math": [ "cultivation_metabolism_factor()" ] } },
+      { "value": "METABOLISM", "multiply": { "math": [ "cultivation_metabolism_factor()" ] } },
+      { "value": "BIONIC_MANA_PENALTY", "multiply": { "math": [ "cultivation_bionic_penalty_factor()" ] } },
+      { "value": "BIONIC_POWER", "multiply": { "math": [ "cultivation_bionic_power_factor()" ] } },
+      { "value": "ARMOR_ALL", "multiply": { "math": [ "cultivation_armor_factor()" ] } },
+      { "value": "CRAFTING_SPEED_MULTIPLIER", "multiply": { "math": [ "cultivation_craft_speed_factor()" ] } },
+      { "value": "BONUS_DODGE", "multiply": { "math": [ "cultivation_dodge_factor()" ] } },
+      { "value": "FREE_DODGES", "multiply": { "math": [ "cultivation_dodge_factor()" ] } },
+      { "value": "PAIN", "multiply": { "math": [ "cultivation_pain_factor()" ] } },
+      { "value": "SPEED", "multiply": { "math": [ "cultivation_speed_factor()" ] } },
+      { "value": "NIGHT_VIS", "multiply": { "math": [ "cultivation_vision_factor()" ] } },
+      { "value": "OVERMAP_SIGHT", "multiply": { "math": [ "cultivation_vision_factor()" ] } },
+      { "value": "CLIMATE_CONTROL_HEAT", "multiply": { "math": [ "cultivation_climate_control_factor()" ] } },
+      { "value": "CLIMATE_CONTROL_CHILL", "multiply": { "math": [ "cultivation_climate_control_factor()" ] } },
+      { "value": "STRENGTH", "multiply": { "math": [ "cultivation_str_factor()" ] } },
+      { "value": "DEXTERITY", "multiply": { "math": [ "cultivation_dex_factor()" ] } },
+      { "value": "INTELLIGENCE", "multiply": { "math": [ "cultivation_int_factor()" ] } },
+      { "value": "PERCEPTION", "multiply": { "math": [ "cultivation_per_factor()" ] } }
+    ]
+  }
+]

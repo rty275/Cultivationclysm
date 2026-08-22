@@ -1,0 +1,217 @@
+[
+  {
+    "id": "prac_cultivation_basics",
+    "type": "practice",
+    "activity_level": "ACTIVE_EXERCISE",
+    "category": "CC_PRACTICE",
+    "subcategory": "CSC_PRACTICE_ATHLETICS",
+    "name": "basics of cultivation",
+    "description": "Practice flexing your energies, such that you can attempt to condense a cultivation core.  Very physically intensive.",
+    "skill_used": "swimming",
+    "time": "1 h",
+    "practice_data": { "min_difficulty": 3, "max_difficulty": 3, "skill_limit": 4 },
+    "book_learn": [ "cultivation_scroll_abstract", 3 ],
+    "autolearn": [ [ "swimming", 5 ] ],
+    "proficiencies": [ { "proficiency": "prof_cultivation_basics", "required": false, "time_multiplier": 1.0 } ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "abstract": "cultivation_technique_abstract",
+    "type": "practice",
+    "activity_level": "ACTIVE_EXERCISE",
+    "category": "CC_PRACTICE",
+    "subcategory": "CSC_PRACTICE_ATHLETICS",
+    "name": "",
+    "description": "",
+    "skill_used": "swimming",
+    "time": "1 h",
+    "practice_data": { "min_difficulty": 3, "max_difficulty": 4, "skill_limit": 5 },
+    "autolearn": [ [ "swimming", 6 ] ],
+    "proficiencies": [ { "proficiency": "prof_cultivation_basics", "required": true } ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  {
+    "id": "prac_cultivation_max_mana",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "maximum mana cultivation technique",
+    "description": "Practice cultivating your maximum mana.",
+    "book_learn": [ "cult_max_mana_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_max_mana_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_max_hp",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "maximum health cultivation technique",
+    "description": "Practice cultivating your maximum health.",
+    "book_learn": [ "cult_max_hp_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_max_hp_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_max_stamina",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "maximum stamina cultivation technique",
+    "description": "Practice cultivating your maximum stamina.",
+    "book_learn": [ "cult_max_stamina_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_max_stamina_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_mana_regen",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "mana regeneration cultivation technique",
+    "description": "Practice cultivating your mana regeneration.",
+    "book_learn": [ "cult_mana_regen_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_mana_regen_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_hp_regen",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "health regeneration cultivation technique",
+    "description": "Practice cultivating your health regeneration.",
+    "book_learn": [ "cult_hp_regen_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_hp_regen_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_stamina_regen",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "stamina regeneration cultivation technique",
+    "description": "Practice cultivating your stamina regeneration.",
+    "book_learn": [ "cult_stamina_regen_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_stamina_regen_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_learning",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "learning cultivation technique",
+    "description": "Practice cultivating your capacity for learning.",
+    "book_learn": [ "cult_learning_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_learning_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_metabolism",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "metabolism cultivation technique",
+    "description": "Practice cultivating your metabolism.",
+    "book_learn": [ "cult_metabolism_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_metabolism_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_bionics",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "bionic potential cultivation technique",
+    "description": "Practice cultivating your bionic potential.",
+    "book_learn": [ "cult_bionics_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_bionics_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_armor",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "hardiness cultivation technique",
+    "description": "Practice cultivating your hardiness.",
+    "book_learn": [ "cult_armor_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_armor_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_craft_speed",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "craftiness cultivation technique",
+    "description": "Practice cultivating your craftiness.",
+    "book_learn": [ "cult_craft_speed_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_craft_speed_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_dodge",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "evasiveness cultivation technique",
+    "description": "Practice cultivating your evasiveness.",
+    "book_learn": [ "cult_dodge_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_dodge_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_pain_resistance",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "pain resistance cultivation technique",
+    "description": "Practice cultivating your pain resistance.",
+    "book_learn": [ "cult_pain_resistance_scroll", 4 ],
+    "extend": {
+      "proficiencies": [ { "proficiency": "prof_pain_resistance_cultivation", "required": false, "time_multiplier": 1.0 } ]
+    }
+  },
+  {
+    "id": "prac_cultivation_speed",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "speed cultivation technique",
+    "description": "Practice cultivating your speed.",
+    "book_learn": [ "cult_speed_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_speed_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_vision",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "vision cultivation technique",
+    "description": "Practice cultivating your vision.",
+    "book_learn": [ "cult_vision_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_vision_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_climate_control",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "temperature tolerance cultivation technique",
+    "description": "Practice cultivating your temperature tolerance.",
+    "book_learn": [ "cult_climate_control_scroll", 4 ],
+    "extend": {
+      "proficiencies": [ { "proficiency": "prof_climate_control_cultivation", "required": false, "time_multiplier": 1.0 } ]
+    }
+  },
+  {
+    "id": "prac_cultivation_str",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "strength cultivation technique",
+    "description": "Practice cultivating your strength.",
+    "book_learn": [ "cult_str_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_str_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_dex",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "dexterity cultivation technique",
+    "description": "Practice cultivating your dexterity.",
+    "book_learn": [ "cult_dex_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_dex_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_int",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "intelligence cultivation technique",
+    "description": "Practice cultivating your intelligence.",
+    "book_learn": [ "cult_int_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_int_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  },
+  {
+    "id": "prac_cultivation_per",
+    "type": "practice",
+    "copy-from": "cultivation_technique_abstract",
+    "name": "perception cultivation technique",
+    "description": "Practice cultivating your perception.",
+    "book_learn": [ "cult_per_scroll", 4 ],
+    "extend": { "proficiencies": [ { "proficiency": "prof_per_cultivation", "required": false, "time_multiplier": 1.0 } ] }
+  }
+]

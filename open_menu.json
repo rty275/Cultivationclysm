@@ -1,0 +1,68 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "talk_cultivation_opening",
+    "dynamic_line": "Welcome to Cultivationclysm.  Once you complete this configuration, your character should receive a Cultivation Core trait which you can use to cultivate.",
+    "responses": [
+      {
+        "text": "Use Default Settings",
+        "effect": [ { "math": [ "u_cultivation_difficulty = 10000" ] } ],
+        "topic": "TALK_DONE"
+      },
+      { "text": "Customize Settings", "topic": "talk_cultivation_settings_prof" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "talk_cultivation_settings_prof",
+    "dynamic_line": "Do you want cultivation proficiencies to exist?  These limit which aspects you can cultivate, and are trained only through recipes found rarely in the same place you would find martial arts manuals.",
+    "responses": [
+      { "text": "Yes", "topic": "talk_cultivation_settings_difficulty" },
+      {
+        "text": "No",
+        "topic": "talk_cultivation_settings_difficulty",
+        "effect": [ { "u_add_var": "u_cultivation_ignore_proficiencies", "value": "yes" } ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "talk_cultivation_settings_difficulty",
+    "dynamic_line": "How quickly would you like your exponential cultivation to increase?  If you use manual input, know that the default is 10000 and the reduction of this number rapidly scales out of control, given its exponential nature.",
+    "responses": [
+      {
+        "text": "Isekai Cheat Skill (7500)",
+        "effect": [ { "math": [ "u_cultivation_difficulty = 7500" ] } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Distinguished Young Master (9000)",
+        "effect": [ { "math": [ "u_cultivation_difficulty = 9000" ] } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Recommended Default (10000)",
+        "effect": [ { "math": [ "u_cultivation_difficulty = 10000" ] } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Struggle for Power (15000)",
+        "effect": [ { "math": [ "u_cultivation_difficulty = 15000" ] } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Hobbyist Cultivator (20000)",
+        "effect": [ { "math": [ "u_cultivation_difficulty = 20000" ] } ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Manual Input",
+        "effect": [
+          { "run_eocs": "cultivation_core_give" },
+          { "math": [ "u_cultivation_difficulty = num_input('Cultivation Multiplier?', 10000)" ] }
+        ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]
