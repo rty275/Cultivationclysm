@@ -4,18 +4,9 @@
     "id": "cultivation_open_game_with_menu",
     "//": "Open the settings menu on game start",
     "recurrence": 1,
-    "condition": { "not": { "u_has_trait": "cultivationcore" } },
-    "deactivate_condition": { "u_has_trait": "cultivationcore" },
+    "condition": { "math": [ "u_cultivation_difficulty == 0" ] },
+    "deactivate_condition": { "math": [ "u_cultivation_difficulty > 0" ] },
     "effect": [ { "open_dialogue": { "topic": "talk_cultivation_opening" } } ]
-  },
-  {
-    "type": "effect_on_condition",
-    "id": "cultivation_core_give",
-    "//": "Begin game with a core, doncha know",
-    "recurrence": 1,
-    "condition": { "not": { "u_has_trait": "cultivationcore" } },
-    "deactivate_condition": { "u_has_trait": "cultivationcore" },
-    "effect": [ { "u_add_trait": "cultivationcore" }, { "u_message": "Your energies condense into a core." } ]
   },
   {
     "type": "effect_on_condition",

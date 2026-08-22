@@ -13,6 +13,8 @@
     "description": "You know the theory of cultivation, though you still need to learn a technique with which you can cultivate your potential.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "8 h"
   },
   {
@@ -23,6 +25,8 @@
     "description": "You know how to cultivate to increase your maximum mana.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -34,6 +38,8 @@
     "description": "You know how to cultivate to increase your maximum health.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -45,6 +51,8 @@
     "description": "You know how to cultivate to increase your maximum Stamina.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -56,6 +64,8 @@
     "description": "You know how to cultivate to increase your mana regeneration.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -67,6 +77,8 @@
     "description": "You know how to cultivate to increase your health regeneration.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -78,6 +90,8 @@
     "description": "You know how to cultivate to increase your stamina regeneration.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -89,6 +103,8 @@
     "description": "You know how to cultivate to increase your learning potential.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -100,6 +116,8 @@
     "description": "You know how to cultivate to reduce your need for food and drink.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -111,6 +129,8 @@
     "description": "You know how to cultivate to increase your maximum bionic power while also making it impact your mana less.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -122,6 +142,8 @@
     "description": "You know how to cultivate to reduce the harm you are dealt.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -133,6 +155,8 @@
     "description": "You know how to cultivate to increase your crafting speed.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -144,6 +168,8 @@
     "description": "You know how to cultivate to increase your ability to dodge, sometimes even without expending stamina.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -155,6 +181,8 @@
     "description": "You know how to cultivate to reduce the amount of pain you receive.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -166,6 +194,8 @@
     "description": "You know how to cultivate to increase your speed.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -177,6 +207,8 @@
     "description": "You know how to cultivate to increase your night vision and your ability to see what lies over the horizon.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -188,6 +220,8 @@
     "description": "You know how to cultivate to increase your ability to tolerate extreme temperatures.  Not effective against actual flame.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -199,6 +233,8 @@
     "description": "You know how to cultivate to increase your strength.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -210,6 +246,8 @@
     "description": "You know how to cultivate to increase your dexterity.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -221,6 +259,8 @@
     "description": "You know how to cultivate to increase your intelligence.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   },
@@ -232,6 +272,8 @@
     "description": "You know how to cultivate to increase your perception.",
     "can_learn": true,
     "teachable": true,
+    "default_time_multiplier": 1,
+    "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_cultivation_basics" ]
   }

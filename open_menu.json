@@ -6,7 +6,11 @@
     "responses": [
       {
         "text": "Use Default Settings",
-        "effect": [ { "math": [ "u_cultivation_difficulty = 10000" ] } ],
+        "effect": [
+          { "math": [ "u_cultivation_difficulty = 10000" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
+        ],
         "topic": "TALK_DONE"
       },
       { "text": "Customize Settings", "topic": "talk_cultivation_settings_prof" }
@@ -32,34 +36,55 @@
     "responses": [
       {
         "text": "Isekai Cheat Skill (7500)",
-        "effect": [ { "math": [ "u_cultivation_difficulty = 7500" ] } ],
+        "effect": [
+          { "math": [ "u_cultivation_difficulty = 7500" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "Distinguished Young Master (9000)",
-        "effect": [ { "math": [ "u_cultivation_difficulty = 9000" ] } ],
+        "effect": [
+          { "math": [ "u_cultivation_difficulty = 9000" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "Recommended Default (10000)",
-        "effect": [ { "math": [ "u_cultivation_difficulty = 10000" ] } ],
+        "effect": [
+          { "math": [ "u_cultivation_difficulty = 10000" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "Struggle for Power (15000)",
-        "effect": [ { "math": [ "u_cultivation_difficulty = 15000" ] } ],
+        "effect": [
+          { "math": [ "u_cultivation_difficulty = 15000" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "Hobbyist Cultivator (20000)",
-        "effect": [ { "math": [ "u_cultivation_difficulty = 20000" ] } ],
+        "effect": [
+          { "math": [ "u_cultivation_difficulty = 20000" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "Manual Input",
         "effect": [
-          { "run_eocs": "cultivation_core_give" },
-          { "math": [ "u_cultivation_difficulty = num_input('Cultivation Multiplier?', 10000)" ] }
+          { "math": [ "u_cultivation_difficulty = num_input('Cultivation Multiplier?', 10000)" ] },
+          { "u_add_trait": "cultivationcore" },
+          { "u_message": "Your energies condense into a core." }
         ],
         "topic": "TALK_DONE"
       }
